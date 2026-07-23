@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand colors — sample navy fallback; confirm exact hex from public/logo.jpg later */
+  --brand-navy: #0F2A4A;
+  --brand-navy-tint: #2B4E6F;
+  --neutral-tint: #EEF2F7;
+  --bg: #FFFFFF;
+  --text: #0b1720;
+  --radius-md: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a0a0a;
+    --text: #ededed;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+/* Utility and component helpers */
+.brand-navy { color: var(--brand-navy); }
+.bg-neutral-tint { background-color: var(--neutral-tint); }
+.rounded-md-custom { border-radius: var(--radius-md); }
+
+.pull-quote {
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.shadow-soft { box-shadow: 0 6px 18px rgba(15, 42, 74, 0.08); }
+
+/* simple underline grow from center */
+.underline-grow {
+  position: relative;
+}
+.underline-grow::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: rgba(255,255,255,0.85);
+  transition: width 200ms ease, left 200ms ease, transform 200ms ease;
+}
+.underline-grow:hover::after { width: 48%; left: 26%; transform: none; }
+
