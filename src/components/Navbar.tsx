@@ -10,7 +10,7 @@ const navItems = [
   { href: "/our-story", label: "Our Story" },
   { href: "/eligibility", label: "Eligibility" },
   { href: "/how-to-apply", label: "How to Apply" },
-  { href: "/winners", label: "Winners" },
+  { href: "/winners", label: "Awardies" },
 ];
 
 export default function Navbar() {
@@ -18,15 +18,15 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 bg-[var(--brand-navy)] text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center gap-4">
+    <header className="sticky top-0 z-40 bg-[var(--brand-navy)] text-white border-b border-white/40">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4">
+        <div className="flex items-center justify-end h-15">
+          {/* <div className="flex items-center gap-4">
             <div className="bg-white rounded-md p-1">
-              <Link href="/" aria-label="Azra & Hameed Awards home">
+              <Link href="/" aria-label="Hameed & Azra Awards home">
                 <Image
                   src="/logo.jpg"
-                  alt="Azra & Hameed Awards logo"
+                  alt="Hameed & Azra Awards logo"
                   width={48}
                   height={48}
                   className="block"
@@ -34,11 +34,11 @@ export default function Navbar() {
               </Link>
             </div>
             <Link href="/" className="font-semibold text-white text-lg">
-              Azra & Hameed Awards
+              Hameed & Azra Awards
             </Link>
-          </div>
+          </div> */}
 
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-end gap-6">
             {navItems.map((item) => {
               const active = pathname === item.href;
               return (
