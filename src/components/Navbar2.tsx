@@ -18,21 +18,21 @@ export default function Navbar2() {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 z-40 bg-[var(--brand-navy)] text-white">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4">
-                <div className="flex items-center justify-between h-15">
+        <header className="sticky top-0 z-40 overflow-visible bg-[var(--brand-navy)] text-white">
+            <div className="max-w-6xl mx-auto overflow-visible px-4 sm:px-6 lg:px-4">
+                <div className="flex h-15 items-center justify-between overflow-visible">
                     {/* Left: logo + text */}
-                    <div className="flex items-center gap-3">
-         
-                        <div className="relative w-12 h-15 hidden md:block overflow-visible">
-                            <div className="absolute top-0 left-0 z-50 bg-white rounded-md p-1 shadow-md pointer-events-auto">
+                    <div className="flex items-center gap-3 self-stretch overflow-visible">
+                        {/* Width-only slot — logo hangs past navbar height */}
+                        <div className="relative hidden w-24 shrink-0 self-stretch overflow-visible md:block">
+                            <div className="absolute top-0 left-0 z-50 rounded-md border-2 border-[var(--brand-navy)] bg-white px-1 pb-1 pt-0 shadow-md pointer-events-auto">
                                 <Link href="/" aria-label="Hameed & Azra Awards home">
                                     <Image
                                         src="/logo.jpg"
                                         alt="Hameed & Azra Awards logo"
-                                        width={72}
-                                        height={130}
-                                        className="block w-16 h-auto"
+                                        width={112}
+                                        height={203}
+                                        className="block h-auto w-24"
                                     />
                                 </Link>
                             </div>
