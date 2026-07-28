@@ -32,7 +32,7 @@ export default function OurStory() {
               "Dr. Shah Ali-ul-Qadar",
               "Dr. Bilqees Ajmal",
               "Dr. M. Zaheer",
-              "Dr. Rozina Karamaly",
+              "Dr. Rozina Karmaliani",
               "Dr. Huma Baqai",
               "Dr. Humayoun A. Azeemi",
               "Dr. Ramzan Bamri",
