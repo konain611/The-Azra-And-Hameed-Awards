@@ -40,15 +40,14 @@ export default function Home() {
             </div>
             <div className="w-full flex justify-end">
               <div className="flex flex-col ml-auto">
-                <div className="relative h-64 sm:h-80 md:h-80 aspect-[3/4] overflow-hidden">
-                  <Image
-                    src="/logo.jpg"
-                    alt="The Hameed & Azra Awards"
-                    fill
-                    className="object-contain"
-                    priority
-                  />
-                </div>
+                <Image
+                  src="/logo.jpg"
+                  alt="The Hameed & Azra Awards"
+                  width={280}
+                  height={373}
+                  className="h-70 w-60 rounded-lg sm:h-72 md:h-72 object-cover mx-auto"
+                  priority
+                />
 
                 <p className="mt-3 max-w-2xl italic text-sm sm:text-base uppercase">
                   providing quality education in pakistan.
