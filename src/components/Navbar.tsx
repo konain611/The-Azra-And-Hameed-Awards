@@ -10,7 +10,7 @@ const navItems = [
   { href: "/our-story", label: "Our Story" },
   { href: "/eligibility", label: "Eligibility" },
   { href: "/how-to-apply", label: "How to Apply" },
-  { href: "/winners", label: "Awardies" },
+  { href: "/winners", label: "Awardees" },
 ];
 
 export default function Navbar() {

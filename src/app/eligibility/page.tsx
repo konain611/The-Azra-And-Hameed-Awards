@@ -9,7 +9,7 @@ export default function Eligibility() {
 
         <div className="mt-6 space-y-3">
           <p>Lecturers and Assistant Professors serving in public-sector educational institutions in Sindh and Balochistan (for this year).</p>
-          <p>The submitted paper must be published in an international or national journal recognized by the HEC.</p>
+          <p>The submitted paper must be published in an international or national indexed journal recognized by the HEC.</p>
           <p>Eligible window: Research papers published or accepted within the last three years from the submission date.</p>
         </div>
 

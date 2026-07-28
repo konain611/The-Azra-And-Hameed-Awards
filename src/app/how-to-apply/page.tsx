@@ -28,7 +28,7 @@ export default function HowToApply() {
             <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[var(--brand-navy)] text-white flex items-center justify-center text-xs font-semibold">3</div>
             <div>
               <h3 className="font-semibold text-[var(--brand-navy)]">Submit by email</h3>
-              <p className="text-sm">Send materials to <strong>hameed.azra@gmail.com</strong> before the submission deadline (2026 deadline: <em>To be announced</em>).</p>
+              <p className="text-sm">Send materials to <strong className="hover:text-[var(--brand-navy)] transition-colors"><a href="mailto:hameed.azra@gmail.com">hameed.azra@gmail.com</a></strong> before the submission deadline (2026 deadline: <em>To be announced</em>).</p>
             </div>
           </li>
 

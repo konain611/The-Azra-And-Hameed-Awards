@@ -18,8 +18,8 @@ export default function Home() {
               </h1>
               <p className="mt-3 max-w-2xl text-sm sm:text-base uppercase ">
                 {/* Established in memory of Azra Hameed and Syed Abdul Hameed — */}
-                celebrating excellence in academic research.
-                providing quality education in pakistan.
+                celebrating excellence in academic research
+                {/* providing quality education in pakistan. */}
               </p>
 
               <div className="mt-6 flex gap-3">
@@ -50,7 +50,7 @@ export default function Home() {
                 />
 
                 <p className="mt-3 max-w-2xl italic text-sm sm:text-base uppercase">
-                  providing quality education in pakistan.
+                  providing quality education in pakistan
                 </p>
               </div>
             </div>

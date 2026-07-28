@@ -61,12 +61,12 @@ export default function Footer() {
           <div>
             <h5 className="font-semibold mb-2">Contact</h5>
             <p className="text-sm">
-              For submissions and enquiries, email:{" "}
+              For submissions and enquiries, phone:{" "}
               <a
                 className="text-blue-700 hover:text-[var(--brand-navy)] transition-colors"
-                href="mailto:hameed.azra@gmail.com"
+                href="tel:+923302329666"
               >
-                hameed.azra@gmail.com
+                +923302329666
               </a>
             </p>
             <p className="mt-4 text-sm text-gray-600">© Hameed & Azra Awards</p>
