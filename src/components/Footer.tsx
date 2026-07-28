@@ -51,7 +51,7 @@ export default function Footer() {
                   href="/winners"
                   className="text-gray-700 hover:text-[var(--brand-navy)] transition-colors"
                 >
-                  Awardies
+                  Awardees
                 </Link>
               </li>
             </ul>
