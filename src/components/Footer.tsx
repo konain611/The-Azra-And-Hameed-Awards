@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Logo + description */}
           <div className="flex items-center gap-3">
             <div className="bg-white rounded-md p-1 shrink-0">
-              <Image src="/logo.jpg" alt="logo" width={80} height={80} />
+              <Image src="/logo.jpg" alt="logo" width={100} height={100} />
             </div>
             <p className="text-sm text-gray-700">
               The Hameed & Azra Awards recognize and encourage excellence in
