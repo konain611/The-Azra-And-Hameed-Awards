@@ -4,7 +4,7 @@ export default function Eligibility() {
   return (
     <>
       <Navbar2 />
-      <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-15">
         <h1 className="text-2xl font-semibold">Criteria</h1>
 
         <div className="mt-6 space-y-3">
