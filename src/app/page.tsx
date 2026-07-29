@@ -14,7 +14,7 @@ export default function Home() {
             {/* Left: text content, unchanged */}
             <div>
               <h1 className="text-3xl sm:text-4xl font-semibold">
-                The Hameed & Azra Awards
+                The Hameed <span className="text-2xl">&</span> Azra Awards
               </h1>
               <p className="mt-3 max-w-2xl text-sm sm:text-base uppercase ">
                 {/* Established in memory of Azra Hameed and Syed Abdul Hameed — */}
