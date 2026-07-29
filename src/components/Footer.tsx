@@ -61,7 +61,18 @@ export default function Footer() {
           <div>
             <h5 className="font-semibold mb-2">Contact</h5>
             <p className="text-sm">
-              For submissions and enquiries, phone:{" "}
+              For submissions and enquiries, 
+              <br />
+              <br />
+              <span className="font-semibold">Email:</span>{" "}
+              <a
+                className="text-blue-700 hover:text-[var(--brand-navy)] transition-colors"
+                href="mailto:hameed.azra@gmail.com"
+              >
+                hameed.azra@gmail.com
+              </a>
+              <br />
+              <span className="font-semibold">Phone:</span>{" "}
               <a
                 className="text-blue-700 hover:text-[var(--brand-navy)] transition-colors"
                 href="tel:+923302329666"
