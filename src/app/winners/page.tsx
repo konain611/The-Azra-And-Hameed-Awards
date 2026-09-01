@@ -1,7 +1,15 @@
 import Navbar2 from "@/components/Navbar2";
 import winnersData from "../../data/winners";
+import submissions2022, { submissionTally } from "../../data/submissions";
 
-function Ribbon({ place }: { place: number }) {
+function Ribbon({ place }: { place?: number }) {
+  if (!place) {
+    return (
+      <div className="inline-block px-2 py-1 text-xs font-semibold bg-[var(--brand-navy)] text-white rounded-sm">
+        Award
+      </div>
+    );
+  }
   const label = place === 1 ? "1st" : place === 2 ? "2nd" : "3rd";
   return (
     <div className="inline-block px-2 py-1 text-xs font-semibold bg-[var(--brand-navy)] text-white rounded-sm">
@@ -46,6 +54,31 @@ export default function Winners() {
         <section className="mt-10">
           <h2 className="text-lg font-semibold">2026 Awards</h2>
           <p className="mt-2">Results will be published here following the award ceremony.</p>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold">2022 Submitted Papers</h2>
+          <p className="mt-2 text-sm text-gray-600">
+            Full list of all papers submitted for the 2022 awards cycle.
+          </p>
+
+          <ol className="mt-4 space-y-4 list-decimal list-inside">
+            {submissions2022.map((s, idx) => (
+              <li key={idx} className="pl-1">
+                <span className="font-medium">{s.author}</span>
+                {s.title && <span>, {s.title}</span>}
+                <span className="text-gray-600"> — {s.faculty}</span>
+              </li>
+            ))}
+          </ol>
+
+          <div className="mt-6 flex flex-wrap gap-3 text-sm">
+            {submissionTally.map((t) => (
+              <div key={t.faculty} className="px-3 py-1 bg-neutral-tint rounded-md-custom">
+                {t.faculty}: {t.count}
+              </div>
+            ))}
+          </div>
         </section>
       </div>
     </>
