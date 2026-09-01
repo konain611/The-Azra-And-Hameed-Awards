@@ -12,7 +12,7 @@ export default function HowToApply() {
             <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[var(--brand-navy)] text-white flex items-center justify-center text-xs font-semibold">1</div>
             <div>
               <h3 className="font-semibold text-[var(--brand-navy)]">Confirm eligibility</h3>
-              <p className="text-sm">Your paper must be published or accepted for publication from July 2023 onward, in a recognized national/international peer-reviewed journal. Online journals must have been in continuous publication for at least 5 years prior to your paper's publication date.</p>
+              <p className="text-sm">Your paper must be published in a recognized and reputable journal within the last two years. Online journals must have been in continuous publication for at least 5 years prior to your paper's publication date.</p>
             </div>
           </li>
 
@@ -28,7 +28,7 @@ export default function HowToApply() {
             <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[var(--brand-navy)] text-white flex items-center justify-center text-xs font-semibold">3</div>
             <div>
               <h3 className="font-semibold text-[var(--brand-navy)]">Submit by email</h3>
-              <p className="text-sm">Send materials to <strong className="hover:text-[var(--brand-navy)] transition-colors"><a href="mailto:hameed.azra@gmail.com">hameed.azra@gmail.com</a></strong> before the submission deadline (2026 deadline: <em>To be announced</em>).</p>
+              <p className="text-sm">Send materials to <strong className="hover:text-[var(--brand-navy)] transition-colors"><a href="mailto:hameedazraaward@gmail.com">hameedazraaward@gmail.com</a></strong> before the submission deadline (2026 deadline: <strong>30 September 2026</strong>).</p>
             </div>
           </li>
 
