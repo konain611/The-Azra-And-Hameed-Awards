@@ -2,15 +2,15 @@ import Navbar2 from "@/components/Navbar2";
 
 export default function OurStory() {
   return (
-    <>
+    <div className="bg-gray-50 text-gray-900 font-medium">
       <Navbar2 />
       <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
        
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--brand-navy)]">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-(--brand-navy)">
             AHA Awards
           </p>
           <h1 className="text-2xl font-semibold">Our Story</h1>
-          <p className="mt-4 text-xl font-medium italic text-[var(--brand-navy)] md:text-2xl">
+          <p className="mt-4 text-xl font-medium italic text-(--brand-navy) md:text-2xl">
             A Legacy of Learning, Service and Generosity
           </p>
           <p className="mt-2 text-sm text-slate-500 md:text-base">
@@ -40,7 +40,7 @@ export default function OurStory() {
                 years when hostel accommodation was unavailable. He helped students
                 who struggled to pay their fees and, at the request of friends whose
                 children were studying in Aligarh, regularly sent their academic
-                results by telegram—often at his own expense, much to Nani Amman's
+                results by telegram—often at his own expense, much to Dadi Amman's
                 displeasure.
               </p>
               <p>
@@ -76,58 +76,6 @@ export default function OurStory() {
             </div>
           </section>
 
-          {/* <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="mb-5 text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
-              Growing Up on the University Campus
-            </h2>
-            <div className="space-y-5 text-lg leading-8 text-slate-700">
-              <p>
-                It was in C-5 that all of us, except our eldest brother, were born,
-                and the campus remains the setting for some of our clearest and
-                fondest memories. In those early years, transport for residents was
-                limited: a single Watan Transport bus shuttled to Saddar; a red truck
-                made its rounds collecting sewage from the campus; and the postman was
-                almost a member of every family, calling out a house number whenever a
-                postcard or letter arrived.
-              </p>
-              <p>
-                Even giving directions to a taxi driver could be an adventure. The
-                familiar reference point was Subzi Mandi, from where one would explain
-                the route towards NIPA—then known as the Aeroclub. From its elevated
-                ground, gliders could be seen taking off, pulled by a rope towed by a
-                jeep.
-              </p>
-              <p>
-                The 1971 war is also part of those childhood memories. Residents
-                watched anti-aircraft fire illuminate the sky over the port area. My
-                father, who had a keen interest in military science, once observed
-                that when a siren sounded without the usual anti-aircraft fire over the
-                port, it might not be a false alarm—the airport could be the target. A
-                few moments later, the sky beyond the hills of what is now
-                Gulistan-e-Jauhar lit up with the sound and flashes of bombing. After
-                another daytime attack the following day, my two elder brothers and
-                their best friend explored the hill and returned with what the family
-                remembered as a suitcase full of bombs and shells.
-              </p>
-              <p>
-                The campus was then so far from the main city that residents commonly
-                referred to a trip to Saddar simply as going to “Sheher”—the city. Saz
-                Book Depot was a familiar destination for schoolbooks, while Bohri
-                Bazaar was a favorite with many of the campus families. Our school
-                friends would tease us: “Do you live in a village that you call Saddar
-                the city?”
-              </p>
-              <p>
-                This was the University in which we grew up: watching student union
-                elections and waiting eagerly for Students’ Week, which became a major
-                cultural event, bringing together well-known poets, writers, singers
-                and other public personalities, with industry also participating. In
-                time, national politics eroded some of that student’s camaraderie;
-                violence, firearms and the presence of the Rangers followed. The rest,
-                as they say, is history.
-              </p>
-            </div>
-          </section> */}
 
           <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
             <h2 className="mb-5 text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
@@ -137,7 +85,7 @@ export default function OurStory() {
               <p>
                 My mother, Azra, daughter of Kaniz Fatima and Sayyid Muhammad Hamid
                 Ali, was the niece of Mr. Mukhtar Hamid Ali, who was a Professor of
-                English at AMU. On both her paternal and maternal sides, she was related
+                English at AMU. Both her paternal and maternal sides, she was related
                 to Sir Syed Ahmad Khan.
               </p>
               <p>
@@ -156,13 +104,13 @@ export default function OurStory() {
             </h2>
             <div className="space-y-5 text-lg leading-8 text-slate-700">
               <p>
-                We consider ourselves deeply fortunate to have had parents who taught
+                We consider ourselves deeply fortunate to have parents who taught
                 us values and ethics not merely through words, but through example: the
                 courage to stand for what is right and speak against what is wrong; to
                 remain just; not to discriminate; and, above all, to deserve first,
                 then desire.
               </p>
-              <p className="rounded-xl border-l-4 border-[var(--brand-navy)] bg-slate-50 px-5 py-4 text-center text-xl font-medium italic text-[var(--brand-navy)] md:text-2xl">
+              <p className="rounded-xl border-l-4 border-(--brand-navy) bg-slate-50 px-5 py-4 text-center text-xl font-medium italic text-(--brand-navy) md:text-2xl">
                 “To deserve first, then desire.”
               </p>
               <p>
@@ -182,21 +130,22 @@ export default function OurStory() {
 
         <section className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm md:p-8">
           <h2 className="text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl">
-            Made Possible With Thanks To
+            Special thanks for their valuable support.
           </h2>
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {[
               "Mr. Syed A. A. Akif",
-              "Dr. Aslam Shah",
-              "Dr. Shah Ali-ul-Qadar",
-              "Dr. Bilqees Ajmal",
-              "Dr. M. Zaheer",
               "Dr. Rozina Karmaliani",
+              "Dr. Muhammad Zaheer",
+              "Dr. Ali",
+              "Dr. Bilqees Ajmal",
+              // "Dr. Shah Ali-ul-Qadar",
               "Dr. Huma Baqai",
-              "Dr. Humayoun A. Azeemi",
-              "Dr. Ramzan Bamri",
               "Dr. Shahid Mehmood",
+              "Dr. Humayoun A. Azeemi",
               "Dr. Muhammad Saeed",
+              "Dr. Aslam Shah",
+              "Dr. Ramzan Bamri",
             ].map((name) => (
               <div
                 key={name}
@@ -207,12 +156,12 @@ export default function OurStory() {
             ))}
           </div>
 
-          <p className="mt-8 rounded-xl border border-[var(--brand-navy)]/20 bg-white px-5 py-6 text-center text-lg italic text-[var(--brand-navy)] md:text-xl">
+          <p className="mt-8 rounded-xl border border-(--brand-navy)/20 bg-white px-5 py-6 text-center text-lg italic text-(--brand-navy) md:text-xl">
             “Their encouragement, guidance, and unwavering support have been
             instrumental in transforming this vision into reality.”
           </p>
         </section>
       </div>
-    </>
+    </div>
   );
 }
