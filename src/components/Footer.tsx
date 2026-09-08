@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="py-6 border-t-2 border-[var(--brand-navy)]">
+    <footer className="py-6 border-t-2 border-(--brand-navy) bg-gray-50 text-gray-900 font-medium">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-9">
           {/* Logo + description */}
@@ -25,7 +25,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/our-story"
-                  className="text-gray-700 hover:text-[var(--brand-navy)] transition-colors"
+                  className="text-gray-700 hover:text-(--brand-navy) transition-colors"
                 >
                   Our Story
                 </Link>
@@ -33,7 +33,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/eligibility"
-                  className="text-gray-700 hover:text-[var(--brand-navy)] transition-colors"
+                  className="text-gray-700 hover:text-(--brand-navy) transition-colors"
                 >
                   Eligibility
                 </Link>
@@ -41,7 +41,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/how-to-apply"
-                  className="text-gray-700 hover:text-[var(--brand-navy)] transition-colors"
+                  className="text-gray-700 hover:text-(--brand-navy) transition-colors"
                 >
                   How to Apply
                 </Link>
@@ -49,7 +49,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/winners"
-                  className="text-gray-700 hover:text-[var(--brand-navy)] transition-colors"
+                  className="text-gray-700 hover:text-(--brand-navy) transition-colors"
                 >
                   Awardees
                 </Link>
@@ -66,7 +66,7 @@ export default function Footer() {
               <br />
               <span className="font-semibold">Email:</span>{" "}
               <a
-                className="text-blue-700 hover:text-[var(--brand-navy)] transition-colors"
+                className="text-blue-700 hover:text-(--brand-navy) transition-colors"
                 href="mailto:hameed.azra@gmail.com"
               >
                 hameed.azra@gmail.com
@@ -74,10 +74,19 @@ export default function Footer() {
               <br />
               <span className="font-semibold">Phone:</span>{" "}
               <a
-                className="text-blue-700 hover:text-[var(--brand-navy)] transition-colors"
+                className="text-blue-700 hover:text-(--brand-navy) transition-colors"
                 href="tel:+923302329666"
               >
-                +923302329666
+                +92-330 2329 666
+              </a>
+              <br/>
+              <span className="font-semibold ml-12"></span>{" "}
+
+              <a
+                className="text-blue-700 hover:text-(--brand-navy) transition-colors"
+                href="tel:+61421819960"
+              >
+                +61-421 819 960
               </a>
             </p>
             <p className="mt-4 text-sm text-gray-600">© Hameed & Azra Awards</p>
