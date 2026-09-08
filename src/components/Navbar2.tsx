@@ -18,14 +18,12 @@ export default function Navbar2() {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 z-40 overflow-visible bg-[var(--brand-navy)] text-white">
+        <header className="sticky top-0 z-40 overflow-visible bg-(--brand-navy) text-gray-50">
             <div className="max-w-6xl mx-auto overflow-visible px-4 sm:px-6 lg:px-4">
                 <div className="flex h-15 items-center justify-between overflow-visible">
-                    {/* Left: logo + text */}
                     <div className="flex items-center gap-3 self-stretch overflow-visible">
-                        {/* Width-only slot — logo hangs past navbar height */}
                         <div className="relative hidden w-24 shrink-0 self-stretch overflow-visible md:block">
-                            <div className="absolute top-0 left-0 z-50 rounded-md border-2 border-[var(--brand-navy)] bg-white px-1 pb-1 pt-0 shadow-md pointer-events-auto">
+                            <div className="absolute top-0 left-0 z-50 rounded-md border-2 border-(--brand-navy) bg-gray-50 px-1 pb-1 pt-0 shadow-md pointer-events-auto">
                                 <Link href="/" aria-label="Hameed & Azra Awards home">
                                     <Image
                                         src="/logo.jpg"
@@ -38,7 +36,7 @@ export default function Navbar2() {
                             </div>
                         </div>
 
-                        <Link href="/" className="font-semibold text-white text-lg">
+                        <Link href="/" className="font-semibold text-gray-50 text-lg">
                             Hameed & Azra Awards
                         </Link>
                     </div>
@@ -81,14 +79,14 @@ export default function Navbar2() {
 
             {/* Mobile menu */}
             {open && (
-                <div className="md:hidden bg-[var(--brand-navy)]/95">
+                <div className="md:hidden bg-(--brand-navy)/95">
                     <div className="px-4 pb-4 pt-2 space-y-1">
                         {navItems.map((item) => (
                             <Link
                                 key={item.href}
                                 href={item.href}
                                 onClick={() => setOpen(false)}
-                                className="block px-3 py-2 rounded-md text-white"
+                                className="block px-3 py-2 rounded-md text-gray-50"
                             >
                                 {item.label}
                             </Link>
