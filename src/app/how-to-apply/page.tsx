@@ -2,41 +2,41 @@ import Navbar2 from "@/components/Navbar2";
 
 export default function HowToApply() {
   return (
-    <>
+    <div className="bg-gray-50 text-gray-900 font-medium">
       <Navbar2 />
       <div className="max-w-6xl mx-auto px-4 py-15">
         <h1 className="text-2xl font-semibold">How to Apply</h1>
 
         <ol className="mt-6 space-y-6">
           <li className="flex gap-4">
-            <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[var(--brand-navy)] text-white flex items-center justify-center text-xs font-semibold">1</div>
+            <div className="shrink-0 w-7 h-7 rounded-full bg-(--brand-navy) text-white flex items-center justify-center text-xs font-semibold">1</div>
             <div>
-              <h3 className="font-semibold text-[var(--brand-navy)]">Confirm eligibility</h3>
+              <h3 className="font-semibold text-(--brand-navy)">Confirm eligibility</h3>
               <p className="text-sm">Your paper must be published in a recognized and reputable journal within the last two years. Online journals must have been in continuous publication for at least 5 years prior to your paper's publication date.</p>
             </div>
           </li>
 
           <li className="flex gap-4">
-            <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[var(--brand-navy)] text-white flex items-center justify-center text-xs font-semibold">2</div>
+            <div className="shrink-0 w-7 h-7 rounded-full bg-(--brand-navy) text-white flex items-center justify-center text-xs font-semibold">2</div>
             <div>
-              <h3 className="font-semibold text-[var(--brand-navy)]">Prepare your documents</h3>
+              <h3 className="font-semibold text-(--brand-navy)">Prepare your documents</h3>
               <p className="text-sm">Include written co-author consent if the paper has multiple authors.</p>
             </div>
           </li>
 
           <li className="flex gap-4">
-            <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[var(--brand-navy)] text-white flex items-center justify-center text-xs font-semibold">3</div>
+            <div className="shrink-0 w-7 h-7 rounded-full bg-(--brand-navy) text-white flex items-center justify-center text-xs font-semibold">3</div>
             <div>
-              <h3 className="font-semibold text-[var(--brand-navy)]">Submit by email</h3>
-              <p className="text-sm">Send materials to <strong className="hover:text-[var(--brand-navy)] transition-colors"><a href="mailto:hameedazraaward@gmail.com">hameedazraaward@gmail.com</a></strong> before the submission deadline (2026 deadline: <strong>30 September 2026</strong>).</p>
+              <h3 className="font-semibold text-(--brand-navy)">Submit by email</h3>
+              <p className="text-sm">Send materials to <strong className="hover:text-(--brand-navy) transition-colors"><a href="mailto:hameed.azra@gmail.com">hameed.azra@gmail.com</a></strong></p>
             </div>
           </li>
 
           <li className="flex gap-4">
-            <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[var(--brand-navy)] text-white flex items-center justify-center text-xs font-semibold">4</div>
+            <div className="shrink-0 w-7 h-7 rounded-full bg-(--brand-navy) text-white flex items-center justify-center text-xs font-semibold">4</div>
             <div>
-              <h3 className="font-semibold text-[var(--brand-navy)]">Wait for results</h3>
-              <p className="text-sm">Evaluation is criteria-based and transparent, though individual scores aren't shared with applicants.</p>
+              <h3 className="font-semibold text-(--brand-navy)">Submission results</h3>
+              <p className="text-sm">Evaluation is criteria-based and transparent, though individual scores are not shared with applicants.</p>
             </div>
           </li>
         </ol>
@@ -51,6 +51,6 @@ export default function HowToApply() {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 }
