@@ -18,26 +18,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 bg-[var(--brand-navy)] text-white border-b border-white/40">
+    <header className="sticky top-0 z-40 bg-(--brand-navy) text-gray-50 border-b border-gray-400 font-medium">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex items-center justify-end h-15">
-          {/* <div className="flex items-center gap-4">
-            <div className="bg-white rounded-md p-1">
-              <Link href="/" aria-label="Hameed & Azra Awards home">
-                <Image
-                  src="/logo.jpg"
-                  alt="Hameed & Azra Awards logo"
-                  width={48}
-                  height={48}
-                  className="block"
-                />
-              </Link>
-            </div>
-            <Link href="/" className="font-semibold text-white text-lg">
-              Hameed & Azra Awards
-            </Link>
-          </div> */}
-
           <nav className="hidden md:flex items-end gap-6">
             {navItems.map((item) => {
               const active = pathname === item.href;
@@ -73,16 +56,15 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-[var(--brand-navy)]/95">
+        <div className="md:hidden bg-(--brand-navy)/95">
           <div className="px-4 pb-4 pt-2 space-y-1">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="block px-3 py-2 rounded-md text-white"
+                className="block px-3 py-2 rounded-md text-gray-50"
               >
                 {item.label}
               </Link>
