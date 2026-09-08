@@ -2,7 +2,7 @@ import Navbar2 from "@/components/Navbar2";
 
 export default function Eligibility() {
   return (
-    <>
+    <div className="bg-gray-50 text-gray-900 font-medium">
       <Navbar2 />
       <div className="max-w-6xl mx-auto px-4 py-15">
         <h1 className="text-2xl font-semibold">Criteria</h1>
@@ -33,6 +33,6 @@ export default function Eligibility() {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 }
