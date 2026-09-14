@@ -139,7 +139,7 @@ export default function OurStory() {
               "Dr. Muhammad Zaheer",
               "Dr. Ali",
               "Dr. Bilqees Ajmal",
-              // "Dr. Shah Ali-ul-Qadar",
+              "Dr. Nasira Khatoon",
               "Dr. Huma Baqai",
               "Dr. Shahid Mehmood",
               "Dr. Humayoun A. Azeemi",
