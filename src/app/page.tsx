@@ -47,7 +47,7 @@ export default function Home() {
                 />
 
                 <p className="mt-3 max-w-2xl italic text-sm sm:text-base uppercase">
-                  providing quality education in pakistan
+                  promoting quality education in pakistan
                 </p>
               </div>
             </div>
