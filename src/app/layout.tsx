@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "Hameed & Azra Awards",
@@ -37,8 +37,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
-        {/* <Navbar / */}
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+        <Analytics />
+        {children}</main>
         <Footer />
       </body>
     </html>
